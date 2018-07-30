@@ -10,7 +10,7 @@ services:
     restart: always
     volumes:
       - db_data:/var/lib/mysql
-    container_name: mysql
+    container_name: ${CONTAINER_NAME}
 
 volumes:
   db_data:
